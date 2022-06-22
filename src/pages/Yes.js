@@ -1,8 +1,12 @@
+import FormattedText from './FormattedText';
+
+
 export default function Yes() {
 
     return (
         <div>
-            Thank you Baby;
+            <FormattedText text ='Thank You Baby :)'>
+            </FormattedText>
         </div>
     )
 }
