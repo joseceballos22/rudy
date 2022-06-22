@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/rudy/static/css/main.92513b9a.css",
-    "main.js": "/rudy/static/js/main.b8fcef35.js",
+    "main.js": "/rudy/static/js/main.4b0ddc26.js",
     "index.html": "/rudy/index.html",
     "main.92513b9a.css.map": "/rudy/static/css/main.92513b9a.css.map",
-    "main.b8fcef35.js.map": "/rudy/static/js/main.b8fcef35.js.map"
+    "main.4b0ddc26.js.map": "/rudy/static/js/main.4b0ddc26.js.map"
   },
   "entrypoints": [
     "static/css/main.92513b9a.css",
-    "static/js/main.b8fcef35.js"
+    "static/js/main.4b0ddc26.js"
   ]
 }
