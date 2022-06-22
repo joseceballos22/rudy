@@ -9,7 +9,7 @@ import Home from './pages/Home';
 function App() {
   return (
     <div>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Routes>
             <Route path='/yes' element={<Yes></Yes>}/>
             <Route path ='/no' element={<No></No>}/>
