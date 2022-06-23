@@ -1,12 +1,14 @@
 import { Box, Grid, Paper, Typography, AppBar, Tabs, Tab, Button } from '@mui/material';
-import FormattedText from './FormattedText';
+import Display from './Display';
+import { useNavigate } from 'react-router-dom';
 
 export default function No() {
 
+    const navigate = useNavigate();
     return (
         <div>
-            <FormattedText text ='It was real it was fun wasnt real fun :('>
-            </FormattedText>
+            <Display mainText ='It was real it was fun wasnt real fun :('>
+            </Display>
         </div>
     )
 }

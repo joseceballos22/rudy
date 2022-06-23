@@ -1,12 +1,11 @@
-import FormattedText from './FormattedText';
-
+import Display from './Display';
 
 export default function Yes() {
 
     return (
         <div>
-            <FormattedText text ='Thank You Baby :)'>
-            </FormattedText>
+            <Display mainText ='Thank You Baby :)'>
+            </Display>
         </div>
     )
 }
