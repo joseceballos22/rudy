@@ -1,34 +1,44 @@
 import { Box, Grid, Paper, Typography, AppBar, Tabs, Tab, Button } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
+import backgroundImg from '../images/rudyBackgroundHome.png';
 
 export default function Home() {
     const navigate = useNavigate();
     return (
-        <div style={{ background: 'AntiqueWhite' , height: '100%'}}>
-            <Box p={10}>
-                <Paper elevation={3}>
-                    <Box pb={50} pt={10}>
-                        <Typography variant='h1'sx={{}} style={{ textAlign: 'center'}}>Will you be mine?</Typography>
-                        <Box p={30}>
-                        <div className='formatButton'>
-                            <Box p={10}>
-                            <Button variant='outlined' size='large' style={{ width: '30%'}} onClick={() => {
-                                navigate('/yes');
-                            }}>
-                                Yes :)
-                            </Button>
-                            <Button variant='outlined' size='large' style={{ width: '30%'}} onClick={() => {
-                                navigate('/no')
-                            }}>
-                                No :(
-                            </Button>
-                            </Box>
-                        </div>
-                        </Box>
-                    </Box>
-                </Paper>
+        <div>
+            <Box p={7}>
+                <div style={{ textAlign: 'center'}}>
+                    <Button 
+                        variant='contained'
+                        style={{ marginRight: '30px', width: '30%', backgroundColor: 'purple'}} onClick={(()=> {
+                            navigate('/');
+                        })}>
+                        Home
+                    </Button>
+                    <Button 
+                        variant='contained'
+                        style={{ width: '30%', backgroundColor: 'red'}} onClick={(() => {
+                            navigate('/watch-this');
+                        })}>
+                    Watch This
+                    </Button>
+                </div>
             </Box>
+            <div style={{ background: 'AntiqueWhite', backgroundImage: `url(${backgroundImg})`}}>
+                <Box p={15}>
+                    <Box pb={50} pt={10}>
+                        <Typography variant='h2'sx={{}} style={{ textAlign: 'center'}}>
+                            Will you be mine?
+                        </Typography>
+                        <Typography variant='h2'sx={{}} style={{ textAlign: 'center'}}>
+                            A website of love for the only true
+                        </Typography>
+                        <Typography variant='h2'sx={{}} style={{ textAlign: 'center'}}>
+                            love in my life
+                        </Typography>
+                    </Box>
+                </Box>
+            </div>
         </div>
-
     );
 }
